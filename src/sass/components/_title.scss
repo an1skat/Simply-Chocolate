@@ -1,0 +1,26 @@
+.mobile-title {
+  color: $text-color;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+
+  & > span {
+    color: $accent-color;
+  }
+}
+.title {
+  color: $text-color;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px; 
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+
+  & > span {
+    color: $accent-color;
+  }
+}
