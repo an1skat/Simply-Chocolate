@@ -6,4 +6,7 @@
   line-height: 24px;
   letter-spacing: -0.6px;
   text-transform: uppercase;
+  & > span {
+    color: $accent-color;
+  }
 }
