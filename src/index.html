@@ -13,6 +13,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.11/build/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./sass/main.scss" />
@@ -31,6 +35,16 @@
       <include src="./partials/explore.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.11/build/js/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector('#phone');
+      window.intlTelInput(input, {
+        initialCountry: 'ua',
+        separateDialCode: true,
+        utilsScript:
+          'https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.11/build/js/utils.js',
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
