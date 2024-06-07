@@ -2,6 +2,27 @@
   <div class="container">
     <h2 class="title">HOW IT’S<span class="made__title-span">made?</span></h2>
     <div class="made__div-wrapper">
+      <div class="made__img-wrapper">
+        <img
+          class="made__img"
+          srcset="
+            ./images/made/chocolate_made_mob_img.jpg     354w,
+            ./images/made/chocolate_made_tab_img.jpg     370w,
+            ./images/made/chocolate_made_desk_img.jpg    450w,
+            ./images/made/chocolate_made_mob@2x_img.jpg  708w,
+            ./images/made/chocolate_made_tab@2x_img.jpg  740w,
+            ./images/made/chocolate_made_desk@2x_img.jpg 900w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100%"
+          src="./images/made/chocolate_made_mob_img.jpg"
+          alt="chocolate made"
+        />
+        <a href="" class="made__link link">
+          <svg width="21" height="20" class="made_icon">
+            <use href="./images/icons.svg#icon-made"></use>
+          </svg>
+        </a>
+      </div>
       <h3 class="made__div-text">
         Try our chocolates today and discover the perfect balance of flavor
       </h3>
