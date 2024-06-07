@@ -11,9 +11,8 @@
           />
           <h3 class="reviews-swiper__title">Victoria Dobrzhanska</h3>
           <p class="reviews-swiper__text">
-            I love this chocolate bar. Perfect 
-            combination of light crispy wafer, covered in 
-            a thin layer chocolate.
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
           </p>
         </div>
         <div class="swiper-slide">
@@ -44,6 +43,50 @@
       </div>
       <div class="swiper-pagination reviews-swiper-pagination"></div>
     </div>
-    <button type="button" class="reviews__btn">Leave a review</button>
+    <button type="button" class="reviews__btn" data-modal-open>
+      Leave a review
+    </button>
   </div>
+  <div class="first-reviews-modal is-hidden" data-modal>
+    <button type="button" class="reviews__btn--close" data-modal-close>
+      <svg width="28px" height="28px" class="reviews__icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 style="text-align: left" class="title">
+      LEAVE A REVIEW ABOUT OUR <span>CHOCOLATE</span>
+    </h2>
+    <form class="reviews__form">
+      <input
+        id="name"
+        name="name"
+        type="text"
+        class="reviews__input"
+        placeholder="Name"
+      />
+      <input
+        id="email"
+        name="email"
+        type="email"
+        class="reviews__input"
+        placeholder="Email"
+      />
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        class="reviews__input"
+        placeholder="Phone number"
+      />
+      <textarea
+      style="height: 91px;"
+        name="text"
+        id="text" 
+        class="reviews__input"
+        placeholder="Enter text"
+      ></textarea>
+      <button type="submit" class="reviews__btn--submit">Send</button>
+    </form>
+  </div>
+  <div class="overlay is-hidden" data-modal-overlay></div>
 </section>
