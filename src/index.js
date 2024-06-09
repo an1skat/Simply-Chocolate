@@ -17,11 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
       main.classList.add('hidden');
       footer.classList.add('hidden');
       image.style.display = 'block';
+      audio.play();
     } else {
       header.classList.remove('hidden');
       main.classList.remove('hidden');
       footer.classList.remove('hidden');
       image.style.display = 'none';
+      audio.pause();
+      audio.curentTime = 0;
     }
   }
 
