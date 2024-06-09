@@ -1,3 +1,34 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const getRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  const showOrHideElements = () => {
+    const randomNumber = getRandomNumber(1, 10);
+    console.log(`Generated random number: ${randomNumber}`);
+
+    const header = document.querySelector("header");
+    const main = document.querySelector("main");
+    const footer = document.querySelector("footer");
+    const image = document.querySelector("img[alt='gif']");
+
+    if (randomNumber === 6) {
+      header.classList.add('hidden');
+      main.classList.add('hidden');
+      footer.classList.add('hidden');
+      image.style.display = 'block';
+    } else {
+      header.classList.remove('hidden');
+      main.classList.remove('hidden');
+      footer.classList.remove('hidden');
+      image.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('load', showOrHideElements);
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const productsSwiper = new Swiper('.products-swiper', {
     loop: true,
