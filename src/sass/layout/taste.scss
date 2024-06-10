@@ -16,18 +16,41 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+.taste__item {
+  border-radius: 15px;
+  &:first-child {
+    background-color: $accent-color;
+  }
+}
 .taste__item:nth-child(even) .taste__subtitle {
   color: $text-color;
 }
 .taste__item:nth-child(odd) .taste__subtitle {
   color: $white;
 }
-.taste__item:first-child {
-  background-color: $accent-color;
-}
+
 .taste__item:nth-child(even) {
   border: 2px solid $accent-color;
 }
 .taste__item:nth-child(3) {
   background-color: black;
+}
+.taste__overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  border-radius: 15px;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+.taste__wrapper-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.taste__item:hover .taste__overley {
+  transform: translateY(0);
 }
