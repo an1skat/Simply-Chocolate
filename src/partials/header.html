@@ -1,1 +1,89 @@
-<header class="header"></header>
+<header class="header">
+  <div class="container">
+    <a class="header__logo logo link" href="./index.html">
+      <span class="logo__accent">Simply</span>
+      Chocolate
+      <svg class="info__svg" width="16" height="12">
+        <use href="./images/icons.svg#icon-chocolate"></use>
+      </svg>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list list">
+        <li class="nav__item">
+          <a class="link nav__link" src="./index.html">Home </a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" src="./made.html">How it's made?</a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" src="./products.html">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" src="./sellers.html">Top sellers</a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" src="./reviews.html">Chocolade is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="js-open-menu menu-toggle"
+      area-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="32" class="menu-open__svg">
+        <use href="./images/icons.svg#icon-made"></use>
+      </svg>
+    </button>
+    <div class="menu-container js-menu-container" id="mobile menu" data-menu>
+      <button
+        type="button"
+        class="menu-toggle js-close-menu"
+        area-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="32" height="32" class="menu-close__svg">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="link menu__link" src="./index.html">Home </a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" src="./made.html">How it's made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" src="./products.html">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" src="./sellers.html">Top sellers</a>
+        </li>
+        <li class="menu__item">
+          <a class="link menu__link" src="./reviews.html"
+            >Chocolade is loved</a
+          >
+        </li>
+      </ul>
+      <div class="menu-container__bottom">
+        <ul class="contact-menu list">
+          <li class="contact__item">
+            <a class="contact__link link">
+              <svg class="contact__svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__link link">
+              <svg class="contact__svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-x"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
