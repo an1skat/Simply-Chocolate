@@ -24,6 +24,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
 
 .list {
   list-style: none;
