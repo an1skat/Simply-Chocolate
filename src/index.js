@@ -1,45 +1,45 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const audio = document.getElementById('audio');
-  const playButton = document.getElementById('playButton');
-  const getRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
+// document.addEventListener('DOMContentLoaded', function () {
+//   const audio = document.getElementById('audio');
+//   const playButton = document.getElementById('playButton');
+//   const getRandomNumber = (min, max) => {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   };
 
-  const showOrHideElements = () => {
-    const randomNumber = getRandomNumber(1, 10);
-    console.log(`Generated random number: ${randomNumber}`);
+//   const showOrHideElements = () => {
+//     const randomNumber = getRandomNumber(1, 10);
+//     console.log(`Generated random number: ${randomNumber}`);
 
-    const header = document.querySelector('header');
-    const main = document.querySelector('main');
-    const footer = document.querySelector('footer');
-    const image = document.querySelector("img[alt='gif']");
+//     const header = document.querySelector('header');
+//     const main = document.querySelector('main');
+//     const footer = document.querySelector('footer');
+//     const image = document.querySelector("img[alt='gif']");
 
-    if (randomNumber === 6) {
-      header.classList.add('hidden');
-      main.classList.add('hidden');
-      footer.classList.add('hidden');
-      image.style.display = 'block';
-      playButton.classList.remove("hidden");
-      audio.play();
-    } else {
-      header.classList.remove('hidden');
-      main.classList.remove('hidden');
-      footer.classList.remove('hidden');
-      image.style.display = 'none';
-      playButton.classList.add("hidden");
-      audio.pause();
-      audio.curentTime = 0;
-    }
-  };
+//     if (randomNumber === 6) {
+//       header.classList.add('hidden');
+//       main.classList.add('hidden');
+//       footer.classList.add('hidden');
+//       image.style.display = 'block'; 
+//       playButton.classList.remove("hidden");
+//       audio.play();
+//     } else {
+//       header.classList.remove('hidden');
+//       main.classList.remove('hidden');
+//       footer.classList.remove('hidden');
+//       image.style.display = 'none';
+//       playButton.classList.add("hidden");
+//       audio.pause();
+//       audio.curentTime = 0;
+//     }
+//   };
 
-  window.addEventListener('load', function () {
-    showOrHideElements();
-  });
+//   window.addEventListener('load', function () {
+//     showOrHideElements();
+//   });
 
-  playButton.addEventListener('click', function () {
-    audio.play();
-  });
-});
+//   playButton.addEventListener('click', function () {
+//     audio.play();
+//   });
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
   const productsSwiper = new Swiper('.products-swiper', {
