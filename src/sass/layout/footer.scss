@@ -1,0 +1,72 @@
+.footer {
+    background-color: $main-color;
+}
+.footer__subtitle {
+    color: $white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -0.48px;
+    padding-top: 32px;
+    margin-left: 20px;
+    margin-bottom: 32px;
+}
+.footer__subtitle-span {
+    color: $accent-color;
+}
+.footer__container {
+    display: flex;
+    gap: 113px;
+}
+.contact {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 32px;
+}
+.contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+// .contact__item {}
+.contact__link {
+    color: $white;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+}
+.contact__text {
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-bottom: 14px;
+}
+.soc__list {
+    display: flex;
+    gap: 14px;
+    margin-right: 20px;
+}
+// .soc__item {}
+// .soc__link {}
+// .soc__svg {}
+.footer__line {
+    background: rgba(255, 255, 255, 0.10);
+    width: 335px;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    margin-left: 20px;
+}
+// .footer__item {}
+.footer__link {
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.28px;
+}
