@@ -1,10 +1,45 @@
-.hero__button{
-font-weight: 600;
-font-size: 14px;
-color: #fff;
-border-radius: 100px;
-padding: 14px 40px;
-width: 144px;
-height: 45px;
-background-color: orange;
+.hero {
+    background-image: url(../images/hero/backround.jpg);
+    background-repeat: no-repeat;
+  background-position:center;
+  border: 10px solid #fff;
+  padding-top: 395px;
+  padding-bottom: 80px;
+  border-radius: 5px;
+}
+.hero__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-bottom: 32px;
+    }
+    .container__button {
+      display: flex;
+     justify-content: center;
+     gap: 14px;
+    }
+.hero__button {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 120px;
+  height: 41px;
+  background-color: orange;
+  border: none;
+}
+.made__button {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
 }
