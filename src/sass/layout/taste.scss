@@ -54,7 +54,7 @@
   border-radius: 15px;
   padding: 28px 55px 25px 56px;
   @media screen and (min-width: 1200px) {
-    padding: 28px 36px 36px 28px;
+    padding: 28px 26px 26px 28px;
   }
   &:first-child {
     background-color: $accent-color;
@@ -68,6 +68,16 @@
 }
 .taste__item:nth-child(3) {
   background-color: black;
+  order: 0;
+  @media screen and (width: 768px) {
+    order: 1;
+  }
+}
+.taste__item:nth-child(2) {
+  order: 0;
+  @media screen and (width: 768px) {
+    order: 1;
+  }
 }
 .taste__overley {
   position: absolute;
