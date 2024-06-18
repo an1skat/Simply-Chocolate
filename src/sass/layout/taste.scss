@@ -10,9 +10,11 @@
     padding-bottom: 128px;
   }
 }
+
 .taste__title {
   text-align: center;
 }
+
 .taste__text {
   font-weight: 400;
   font-size: 14px;
@@ -26,6 +28,7 @@
     margin-bottom: 50px;
   }
 }
+
 .taste__list {
   display: flex;
   flex-direction: column;
@@ -40,6 +43,7 @@
     justify-content: center;
   }
 }
+
 .taste__subtitle {
   font-weight: 600;
   font-size: 14px;
@@ -50,6 +54,7 @@
     color: $text-color;
   }
 }
+
 .taste__item {
   border-radius: 15px;
   padding: 28px 55px 25px 56px;
@@ -60,12 +65,15 @@
     background-color: $accent-color;
   }
 }
+
 .taste__item:nth-child(odd) .taste__subtitle {
   color: $white;
 }
+
 .taste__item:nth-child(even) {
   border: 2px solid $accent-color;
 }
+
 .taste__item:nth-child(3) {
   background-color: black;
   order: 0;
@@ -73,12 +81,14 @@
     order: 1;
   }
 }
+
 .taste__item:nth-child(2) {
   order: 0;
   @media screen and (width: 768px) {
     order: 1;
   }
 }
+
 .taste__overley {
   position: absolute;
   top: 0;
@@ -93,17 +103,21 @@
     transform: translateY(0);
   }
 }
+
 .taste__wrapper-image {
   overflow: hidden;
   position: relative;
 }
+
 .taste__overley-title {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: $text-color;
+  padding-bottom: 8px;
 }
+
 .taste__overley-text {
   font-weight: 400;
   font-size: 14px;
@@ -111,10 +125,13 @@
   letter-spacing: -0.02em;
   color: $text-color;
 }
+
 .taste__overley-btn-div {
   display: flex;
   gap: 6px;
+  padding-bottom: 14px;
 }
+
 .taste__overley-btn {
   border-radius: 35px;
   font-weight: 400;
@@ -127,6 +144,7 @@
     color: $white;
   }
 }
+
 .taste__overley-btn:last-child {
   background-color: transparent;
   border: 2px solid $accent-color;
