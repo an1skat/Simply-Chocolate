@@ -1,0 +1,96 @@
+.sellers {
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+}
+
+.sellers__title {
+    @extend %mobile-title;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.72px;
+        margin-bottom: 50px;
+    }
+}
+
+.container__sellers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 16px;
+        align-items: stretch;
+    }
+}
+
+.sellers__img {
+    width: 335px;
+    height: 464px;
+    flex-shrink: 0;
+}
+
+.sellers__img-container {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.sellers__text {
+    color: $text-color;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 306px;
+        height: 90px;
+        padding-right: 38px;
+    }
+}
+
+.sellers__btn {
+    display: block;
+    margin: 0 auto;
+    padding: 14px 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid $accent-color;
+    color: $white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: black;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 174px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        cursor: pointer;
+    }
+
+}
