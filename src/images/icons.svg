@@ -38,11 +38,11 @@
 			<path fill="none" stroke="#fd9222" style="stroke: var(--color1, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.7429" d="M20.111 23.118l-14.187-8.864M9.838 7.837l14.185 8.864M9.105 25.102l11.738-19.25M25.653 14.027c-3.040-1.897-4.235-3.383-2.278-6.59l-9.626-6.016-11.738 19.25 14.187 8.864 9.452-15.508z">
 			</path>
 		</symbol>
-		<symbol id="icon-menu" viewBox="0 0 48 32">
-			<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3 16.006h42M3 2.006h42M3 30.006h42">
+		<symbol id="icon-open" viewBox="0 0 48 32">
+			<path fill="none" stroke="#111111" style="stroke: var(--color3, #111111)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3 16.006h42M3 2.006h42M3 30.006h42">
 			</path>
 		</symbol>
-		<symbol id="icon-close" viewBox="0 0 32 32">
+		<symbol id="icon-klose" viewBox="0 0 32 32">
 			<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M29.345 2.667l-26.678 26.678M2.667 2.667l26.678 26.678">
 			</path>
 		</symbol>
