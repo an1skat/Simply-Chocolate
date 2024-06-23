@@ -1,1 +1,30 @@
-<section class="explore"></section>
+<section class="explore">
+  <div class="container">
+    <h2 class="explore__title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="explore__text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button type="button" class="explore__btn" data-modal-open>
+      Subscribe
+    </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg width="24" height="24" class="modal-icon__link">
+            <use
+              href="./images/symbol-defs.svg#icon-close"
+            ></use></svg>
+        </button>
+        <h3 class="modal__title">Explore our <span class="modal__title-span"></span>>new chocolate</span> first!</h3>
+        <label for="email" class="modal__label"
+          >Enter your email
+          <input type="email" id="email" name="email" class="modal__input" />
+          <button type="button" class="modal-explore__btn">Submit</button>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
