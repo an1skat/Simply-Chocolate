@@ -7,11 +7,11 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/explore_bg_mob_5.jpg);
+    url(./images/explore_bg_mob_5.jpg);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("../images/explore_bg_mob@2x_6.jpg");
+    background-image: url("./images/explore_bg_mob@2x_6.jpg");
 }
 }
 .explore__title {
