@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const refs = {
   openBtn: document.querySelector('[data-modal-open]'),
+  openBtn2: document.querySelector('.reviews__btn--submit'),
   closeBtn: document.querySelector('[data-modal-close]'),
   closeBtn2: document.querySelector('[data-modal-close2]'),
   modal: document.querySelector('[data-modal]'),
   modal2: document.querySelector('[data-modal2]'),
   overlay: document.querySelector('[data-modal-overlay]'),
-  sendBtn: document.querySelector('.reviews__btn--submit'),
 };
 
 function toggleModal() {
@@ -115,7 +115,7 @@ refs.overlay.addEventListener('click', () => {
 });
 refs.closeBtn2.addEventListener('click', closeSecondModal);
 
-refs.sendBtn.addEventListener('click', function (e) {
+refs.openBtn2.addEventListener('click', function (e) {
   e.preventDefault();
   openSecondModal();
 });
