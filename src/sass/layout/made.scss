@@ -14,6 +14,12 @@
     margin-bottom: 28px;
   }
 }
+.made__div {
+  margin-left: 0;
+  @media screen and (min-width: 1200px) {
+    margin-left: 44px;
+  }
+}
 .made-list__text {
   font-weight: 400;
   font-size: 14px;
@@ -28,6 +34,7 @@
   margin-top: 22px;
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
+    display: flex;
   }
 }
 
@@ -37,6 +44,9 @@
 
 .made__img {
   border-radius: 15px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 444px;
+  }
 }
 
 .made__icon {
