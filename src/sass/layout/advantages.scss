@@ -26,7 +26,40 @@
     justify-content: space-between;
   }
 }
+.advantages__item:first-child {
+  width: 326px;
+  border: none;
+  @media screen and (min-width: 1200px) {
+    border-right: 1px solid $white;
+  }
+}
+.advantages__item:nth-child(2) {
+  width: 326px;
+  border: none;
+  @media screen and (min-width: 1200px) {
+    border-right: 1px solid $white;
+  }
+}
 
+.advantages__item::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url(../images/advantages/advantages-chocolate.svg);
+  margin-bottom: 22px;
+  border: 1px solid $white;
+  border-radius: 50px;
+}
+.advantages__item:nth-child(2)::before {
+  background-image: url(../images/advantages/advantages-money.svg);
+  background-repeat: no-repeat;
+}
+.advantages__item:nth-child(3)::before {
+  background-image: url(../images/advantages/advantages-spoon.svg);
+  background-repeat: no-repeat;
+}
 .advantages__subtitle {
   font-weight: 600;
   font-size: 18px;
