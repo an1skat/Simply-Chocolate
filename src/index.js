@@ -18,7 +18,7 @@
 //       header.classList.add('hidden');
 //       main.classList.add('hidden');
 //       footer.classList.add('hidden');
-//       image.style.display = 'block'; 
+//       image.style.display = 'block';
 //       playButton.classList.remove("hidden");
 //       audio.play();
 //     } else {
