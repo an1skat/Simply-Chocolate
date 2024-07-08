@@ -1,3 +1,8 @@
+.header__container {
+  display: flex;
+  gap: 188px;
+  padding-top: 30px;
+}
 .header__list {
   display: flex;
 }
@@ -5,7 +10,6 @@
   display: none;
   @media (min-width: 1024px) {
   display: flex;
-
   }
 }
 .nav__list {
@@ -22,12 +26,19 @@ letter-spacing: -0.02em;
 color: black;
 }
 .header__logo {
+  @media (min-width: 1024px) {
+    margin-top: 0px;
+  }
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
   font-style: italic;
   font-weight: 700;
   font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.03em;
   color: black;
+
 }
 .logo__accent {
   font-weight: 700;
@@ -35,6 +46,13 @@ color: black;
   line-height: 129%;
   letter-spacing: -0.03em;
   color: black;
+}
+.info {
+  display: none;
+  @media (min-width: 1024px) {
+  display: flex;
+  gap: 18px;
+  }
 }
 .menu-toggle {
   min-height: 40px;
@@ -129,3 +147,13 @@ margin-top: 250px;
   margin-top: 500px;
 }
 }
+.menu-open__svg {
+  margin-left: 138px;
+  @media (min-width: 768px){
+    margin-left: 503px;
+      }
+      @media (min-width: 480px){
+        margin-left: 300px;
+          }
+}
+
