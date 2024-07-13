@@ -1,10 +1,22 @@
-// @media screen and (min-width:768px) {}
 .footer {
     background-color: $main-color;
 }
 .footer__container-contact {
     display: flex;
-
+    flex-direction: column;
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        gap: 15%;
+    }
+    @media screen and (min-width:1024px) {
+        gap: 36%;
+    }
+    @media screen and (min-width:1200px) {
+        gap: 45%;
+    }
+    @media (min-width:1201px) and (max-width:2000px) {
+        gap: 56%;
+    }
 }
 .footer__subtitle {
     color: $white;
@@ -32,11 +44,7 @@
     gap: 113px;
     @media screen and (min-width:768px) {
         padding-top: 50px;
-        margin-left: 107px;
         gap: 50px;
-    }
-    @media screen and (min-width:1200px) {
-        margin-left: 543px;
     }
 }
 .contact {
@@ -49,7 +57,6 @@
     flex-direction: column;
     gap: 4px;
 }
-// .contact__item {}
 .contact__link {
     color: $white;
     font-size: 14px;
@@ -68,18 +75,11 @@
     gap: 14px;
     margin-right: 20px;
 }
-// .soc__item {}
-// .soc__link {}
-// .soc__svg {}
 .footer__line {
     color: $white;
     opacity: 0.1;
-    width: 335px;
-    @media screen and (min-width:768px) {
-        width: 704px;
-    }
-    @media screen and (min-width:1200px) {
-        width: 1136px;
+    @media (min-width:320px) and (max-width:2000px) {
+        width: 96%;
     }
 }
 .footer__list {
@@ -95,7 +95,6 @@
         padding-left: 12px;
     }
 }
-// .footer__item {}
 .footer__link {
     color: $white;
     font-size: 14px;
