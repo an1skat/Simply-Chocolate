@@ -32,6 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     },
   });
+
+  const sellersSwiper = new Swiper('.sellers-swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
 
 const refs = {
