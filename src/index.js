@@ -1,46 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   const audio = document.getElementById('audio');
-//   const playButton = document.getElementById('playButton');
-//   const getRandomNumber = (min, max) => {
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-//   };
-
-//   const showOrHideElements = () => {
-//     const randomNumber = getRandomNumber(1, 10);
-//     console.log(`Generated random number: ${randomNumber}`);
-
-//     const header = document.querySelector('header');
-//     const main = document.querySelector('main');
-//     const footer = document.querySelector('footer');
-//     const image = document.querySelector("img[alt='gif']");
-
-//     if (randomNumber === 6) {
-//       header.classList.add('hidden');
-//       main.classList.add('hidden');
-//       footer.classList.add('hidden');
-//       image.style.display = 'block'; 
-//       playButton.classList.remove("hidden");
-//       audio.play();
-//     } else {
-//       header.classList.remove('hidden');
-//       main.classList.remove('hidden');
-//       footer.classList.remove('hidden');
-//       image.style.display = 'none';
-//       playButton.classList.add("hidden");
-//       audio.pause();
-//       audio.curentTime = 0;
-//     }
-//   };
-
-//   window.addEventListener('load', function () {
-//     showOrHideElements();
-//   });
-
-//   playButton.addEventListener('click', function () {
-//     audio.play();
-//   });
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
   const productsSwiper = new Swiper('.products-swiper', {
     loop: true,
@@ -78,62 +35,56 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const refs = {
-  openBtn: document.querySelector('[data-modal-open]'),
-  closeBtn: document.querySelector('[data-modal-close]'),
-  closeBtn2: document.querySelector('[data-modal-close2]'),
-  modal: document.querySelector('[data-modal]'),
-  modal2: document.querySelector('[data-modal2]'),
+  openBtns: document.querySelectorAll('[data-modal-open]'),
+  closeBtns: document.querySelectorAll('[data-modal-close]'),
+  modals: document.querySelectorAll('[data-modal]'),
   overlay: document.querySelector('[data-modal-overlay]'),
-  sendBtn: document.querySelector('.reviews__btn--submit'),
 };
 
-function toggleModal() {
-  refs.modal.classList.toggle('is-hidden');
-  refs.overlay.classList.toggle('is-hidden');
-  document.body.classList.toggle('no-scroll');
+function openModal(modal) {
+  refs.modals.forEach(m => m.classList.add('is-hidden'));
+  modal.classList.remove('is-hidden');
+  refs.overlay.classList.remove('is-hidden');
+  document.body.classList.add('no-scroll');
 }
 
-function openSecondModal() {
-  refs.modal.classList.add('is-hidden');
-  refs.modal2.classList.remove('is-hidden');
-}
-
-function closeSecondModal() {
-  refs.modal2.classList.add('is-hidden');
+function closeModal() {
+  refs.modals.forEach(m => m.classList.add('is-hidden'));
   refs.overlay.classList.add('is-hidden');
   document.body.classList.remove('no-scroll');
 }
 
-refs.openBtn.addEventListener('click', toggleModal);
-refs.closeBtn.addEventListener('click', toggleModal);
+refs.openBtns.forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const modalId = btn.getAttribute('data-modal-open');
+    const modal = document.querySelector(`[data-modal="${modalId}"]`);
+    openModal(modal);
+  });
+});
+
+refs.closeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    closeModal();
+  });
+});
+
 refs.overlay.addEventListener('click', () => {
-  if (!refs.modal.classList.contains('is-hidden')) {
-    toggleModal();
-  } else if (!refs.modal2.classList.contains('is-hidden')) {
-    closeSecondModal();
-  }
-});
-refs.closeBtn2.addEventListener('click', closeSecondModal);
-
-refs.sendBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  openSecondModal();
+  closeModal();
 });
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
-    if (!refs.modal.classList.contains('is-hidden')) {
-      toggleModal();
-    } else if (!refs.modal2.classList.contains('is-hidden')) {
-      closeSecondModal();
-    }
+    closeModal();
   }
 });
 
-const input = document.querySelector('#phone');
-window.intlTelInput(input, {
-  initialCountry: 'ua',
-  separateDialCode: true,
-  utilsScript:
-    'https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.11/build/js/utils.js',
+const inputs = document.querySelectorAll('input[type="tel"]');
+inputs.forEach(input => {
+  window.intlTelInput(input, {
+    initialCountry: 'ua',
+    separateDialCode: true,
+    utilsScript:
+      'https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.11/build/js/utils.js',
+  });
 });
