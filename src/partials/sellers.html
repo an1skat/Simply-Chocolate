@@ -121,21 +121,25 @@
             </li>
         </ul>
         <form class="sellers__form">
-            <label class="sellers__label">Personal information
-                <input id="name" name="name" type="text" class="sellers__input" placeholder="Name" />
+            <label class="sellers-modal__label">Personal information
+                <div class="sellers-modal__div-name">
+                    <input id="name" name="name" type="text" class="sellers-modal__input" placeholder="Name" />
+                    <input id="surname" name="surname" type="text" class="sellers-modal__input" placeholder="Surname" />
+                </div>
             </label>
-            <input id="surname" name="surname" type="text" class="sellers__input" placeholder="Surname" />
-            <label class="sellers__label">Email
-                <input id="email" name="email" type="email" class="sellers__input" placeholder="Email" />
+
+            <label class="sellers-modal__label">Email
+                <input id="email" name="email" type="email" class="sellers-modal__input" placeholder="Email" />
             </label>
-            <label class="sellers__label">Phone number
-                <input id="phone" name="phone" type="tel" class="sellers__input" placeholder="Phone number" /></label>
-            <label class="sellers__label">Card number <input id="card" name="card" type="number" class="sellers__input"
-                    placeholder="Enter card" /></label>
-            <label class="sellers__label">Comment
-                <textarea style="height: 91px" name="text" id="text" class="reviews__input"
-                    placeholder="Enter text"></textarea> </label>
-            <button type="submit" class="sellers__btn--submit">Send</button>
+            <label class="sellers-modal__label">Phone number
+                <input id="phone" name="phone" type="tel" class="sellers-modal__input"
+                    placeholder="Phone number" /></label>
+            <label class="sellers-modal__label">Card number <input id="card" name="card" type="number"
+                    class="sellers-modal__input" placeholder="Enter card" /></label>
+            <label class="sellers-modal__label">Comment
+                <textarea name="text" id="text" class="sellers-modal__textarea" placeholder="Enter text"></textarea>
+            </label>
+            <button type="submit" class="sellers__btn--submit">Submit</button>
         </form>
     </div>
 </div>
