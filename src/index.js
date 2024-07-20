@@ -1,3 +1,4 @@
+// swipers
 document.addEventListener('DOMContentLoaded', function () {
   const productsSwiper = new Swiper('.products-swiper', {
     loop: true,
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// modals
 const refs = {
   openBtns: document.querySelectorAll('[data-modal-open]'),
   closeBtns: document.querySelectorAll('[data-modal-close]'),
@@ -93,6 +95,7 @@ document.addEventListener('keydown', e => {
   }
 });
 
+// telephone input
 const inputs = document.querySelectorAll('input[type="tel"]');
 inputs.forEach(input => {
   window.intlTelInput(input, {
