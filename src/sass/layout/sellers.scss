@@ -1,125 +1,113 @@
 .sellers {
-    padding-top: 72px;
-    padding-bottom: 72px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 
-    @media screen and (min-width: 768px) {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 128px;
-        padding-bottom: 128px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 .sellers__title {
-    @extend %mobile-title;
-    margin-bottom: 32px;
+  @extend %mobile-title;
+  margin-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: -0.72px;
-        margin-bottom: 50px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    margin-bottom: 50px;
+  }
 }
 
 .container__sellers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        gap: 16px;
-        align-items: stretch;
-        justify-content: center;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 16px;
+    align-items: stretch;
+    justify-content: center;
+  }
 }
 
 .sellers__img {
-    width: 335px;
-    height: 464px;
-    flex-shrink: 0;
+  width: 335px;
+  height: 464px;
+  flex-shrink: 0;
 }
 
 .sellers__img-container {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: 1200px) {
-        display: block;
-    }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .sellers__text {
-    color: $text-color;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.28px;
-    margin-top: 20px;
-    margin-bottom: 32px;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  margin-top: 20px;
+  margin-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
-        max-width: 306px;
-        height: 90px;
-        padding-right: 38px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 306px;
+    height: 90px;
+    padding-right: 38px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        max-width: 407px;
-        position: absolute;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 407px;
+    position: absolute;
+  }
 }
 
 .container__btn {
-    position: relative;
+  position: relative;
 }
 
 .sellers__btn {
-    display: block;
-    margin: 0 auto;
-    padding: 14px 40px;
-    margin-top: 20px;
-    background-color: transparent;
-    border-radius: 100px;
-    border: 1px solid $accent-color;
-    color: $white;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: normal;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: black;
+  display: block;
+  margin: 0 auto;
+  padding: 14px 40px;
+  margin-top: 20px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid $accent-color;
+  color: $white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: black;
 
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-        cursor: pointer;
-    }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    cursor: pointer;
+  }
 
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        right: 0;
-    }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 0;
+  }
 
-    @media screen and (min-width: 1200px) {
-        right: -350px;
-    }
+  @media screen and (min-width: 1200px) {
+    right: -350px;
+  }
 }
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 
 .backdrop.is-hidden {
     opacity: 0;
@@ -127,32 +115,7 @@
 }
 
 .no-scroll {
-    overflow: hidden;
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
-}
-
-.sellers-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 310px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: white;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-    @media screen and (min-width: 768px) {
-        padding: 48px;
-        width: 608px;
-    }
+  overflow: hidden;
 }
 
 .sellers-modal__btn--close {
@@ -315,4 +278,23 @@
     border-radius: 100px;
     background: #FD9222;
     border: none;
+}
+.sellers-modal.is-hidden {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.sellers-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  padding: 41px;
+  background-color: $white;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }

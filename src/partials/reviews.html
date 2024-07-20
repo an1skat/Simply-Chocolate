@@ -43,12 +43,12 @@
       </div>
       <div class="swiper-pagination reviews-swiper-pagination"></div>
     </div>
-    <button type="button" class="reviews__btn" data-modal-open>
+    <button type="button" class="reviews__btn" data-modal-open="modal1">
       Leave a review
     </button>
   </div>
-  <div class="first-reviews-modal is-hidden" data-modal>
-    <button type="button" class="first-reviews__btn--close" data-modal-close>
+  <div class="first-reviews-modal is-hidden" data-modal="modal1">
+    <button type="button" class="first-reviews__btn--close" data-modal-close="modal1">
       <svg width="28px" height="28px" class="reviews__icon">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
@@ -85,11 +85,11 @@
         class="reviews__input"
         placeholder="Enter text"
       ></textarea>
-      <button type="submit" class="reviews__btn--submit">Send</button>
+      <button type="submit" class="reviews__btn--submit" data-modal-open="modal2">Send</button>
     </form>
   </div>
-  <div class="second-reviews-modal is-hidden" data-modal2>
-    <button type="button" class="second-reviews__btn--close" data-modal-close2>
+  <div class="second-reviews-modal is-hidden" data-modal="modal2">
+    <button type="button" class="second-reviews__btn--close" data-modal-close="modal2">
       <svg width="28px" height="28px">
         <use href="./images/icons.svg#icon-close-gradient"></use>
       </svg>
@@ -108,5 +108,4 @@
       alt="chocolate reviews"
     />
   </div>
-  <div class="overlay is-hidden" data-modal-overlay></div>
 </section>
