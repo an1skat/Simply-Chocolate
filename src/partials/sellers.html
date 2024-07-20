@@ -95,7 +95,7 @@
       </div>
     </div>
 
-    <div class="sellers-modal" data-modal="modal4">
+    <div class="sellers-modal is-hidden" data-modal="modal4">
       <button
         type="button"
         class="sellers-modal__btn--close"
@@ -106,81 +106,168 @@
         </svg>
       </button>
       <h2 class="title sellers-modal__title">BUY <span> NOW</span></h2>
-       <ul class="sellers-modal__list list">
-            <li class="sellers-modal__item">
-                <picture>
-                    <source srcset="
-                              ./images/sellers/sellers-modal_1img_desk.jpg    1x,
-                              ./images/sellers/sellers-modal_1img_desk@2x.jpg 2x
-                            " media="(min-width:1200px)" sizes="”120px”" />
-                    <source srcset="
-                              ./images/sellers/sellers-modal_1img_tab.jpg    1x,
-                              ./images/sellers/sellers-modal_1img_tab@2x.jpg 2x
-                            " media="(min-width:768px)" sizes="”120px”" />
-                    <source srcset="
-                              ./images/sellers/sellers-modal_1img_mob.jpg    1x,
-                              ./images/sellers/sellers-modal_1img_mob@2x.jpg 2x
-                            " media="(max-width:767px)" sizes="”100%”" />
-                    <img src="./images/sellers/sellers_1img_mob.jpg" alt="chocolate" class="sellers-modal__img" />
-                </picture>
-                <button class="sellers-modal__btn" type="button">100g</button>
-            </li>
-            <li class="sellers-modal__item">
-                <picture>
-                    <source srcset="
-                                          ./images/sellers/sellers-modal_2img_desk.jpg    1x,
-                                          ./images/sellers/sellers-modal_2img_desk@2x.jpg 2x
-                                        " media="(min-width:1200px)" sizes="”120px”" />
-                    <source srcset="
-                                          ./images/sellers/sellers-modal_2img_tab.jpg    1x,
-                                          ./images/sellers/sellers-modal_2img_tab@2x.jpg 2x
-                                        " media="(min-width:768px)" sizes="”120px”" />
-                    <source srcset="
-                                          ./images/sellers/sellers-modal_2img_mob.jpg    1x,
-                                          ./images/sellers/sellers-modal_2img_mob@2x.jpg 2x
-                                        " media="(max-width:767px)" sizes="”100%”" />
-                    <img src="./images/sellers/sellers_1img_mob.jpg" alt="chocolate" class="sellers-modal__img" />
-                </picture>
-                <button class="sellers-modal__btn" type="button">200g</button>
-            </li>
-            <li class="sellers-modal__item">
-                <picture>
-                    <source srcset="
-                                          ./images/sellers/sellers-modal_3img_desk.jpg    1x,
-                                          ./images/sellers/sellers-modal_3img_desk@2x.jpg 2x
-                                        " media="(min-width:1200px)" sizes="”120px”" />
-                    <source srcset="
-                                          ./images/sellers/sellers-modal_3img_tab.jpg    1x,
-                                          ./images/sellers/sellers-modal_3img_tab@2x.jpg 2x
-                                        " media="(min-width:768px)" sizes="”120px”" />
-                    <source srcset="
-                                          ./images/sellers/sellers-modal_3img_mob.jpg    1x,
-                                          ./images/sellers/sellers-modal_3img_mob@2x.jpg 2x
-                                        " media="(max-width:767px)" sizes="”100%”" />
-                    <img src="./images/sellers/sellers_1img_mob.jpg" alt="chocolate" class="sellers-modal__img" />
-                </picture>
-                <button class="sellers-modal__btn" type="button">300g</button>
-            </li>
-        </ul>
+      <ul class="sellers-modal__list list">
+        <li class="sellers-modal__item">
+          <picture>
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_1img_desk.jpg    1x,
+                ./images/sellers/sellers-modal_1img_desk@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+              sizes="”120px”"
+            />
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_1img_tab.jpg    1x,
+                ./images/sellers/sellers-modal_1img_tab@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+              sizes="”120px”"
+            />
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_1img_mob.jpg    1x,
+                ./images/sellers/sellers-modal_1img_mob@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+              sizes="”100%”"
+            />
+            <img
+              src="./images/sellers/sellers_1img_mob.jpg"
+              alt="chocolate"
+              class="sellers-modal__img"
+            />
+          </picture>
+          <button class="sellers-modal__btn" type="button">100g</button>
+        </li>
+        <li class="sellers-modal__item">
+          <picture>
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_2img_desk.jpg    1x,
+                ./images/sellers/sellers-modal_2img_desk@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+              sizes="”120px”"
+            />
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_2img_tab.jpg    1x,
+                ./images/sellers/sellers-modal_2img_tab@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+              sizes="”120px”"
+            />
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_2img_mob.jpg    1x,
+                ./images/sellers/sellers-modal_2img_mob@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+              sizes="”100%”"
+            />
+            <img
+              src="./images/sellers/sellers_1img_mob.jpg"
+              alt="chocolate"
+              class="sellers-modal__img"
+            />
+          </picture>
+          <button class="sellers-modal__btn" type="button">200g</button>
+        </li>
+        <li class="sellers-modal__item">
+          <picture>
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_3img_desk.jpg    1x,
+                ./images/sellers/sellers-modal_3img_desk@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+              sizes="”120px”"
+            />
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_3img_tab.jpg    1x,
+                ./images/sellers/sellers-modal_3img_tab@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+              sizes="”120px”"
+            />
+            <source
+              srcset="
+                ./images/sellers/sellers-modal_3img_mob.jpg    1x,
+                ./images/sellers/sellers-modal_3img_mob@2x.jpg 2x
+              "
+              media="(max-width:767px)"
+              sizes="”100%”"
+            />
+            <img
+              src="./images/sellers/sellers_1img_mob.jpg"
+              alt="chocolate"
+              class="sellers-modal__img"
+            />
+          </picture>
+          <button class="sellers-modal__btn" type="button">300g</button>
+        </li>
+      </ul>
       <form class="sellers__form">
-        <label class="sellers-modal__label">Personal information
-                <div class="sellers-modal__div-name">
-                    <input id="name" name="name" type="text" class="sellers-modal__input" placeholder="Name" />
-                    <input id="surname" name="surname" type="text" class="sellers-modal__input" placeholder="Surname" />
-                </div>
-            </label>
+        <label class="sellers-modal__label"
+          >Personal information
+          <div class="sellers-modal__div-name">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              class="sellers-modal__input"
+              placeholder="Name"
+            />
+            <input
+              id="surname"
+              name="surname"
+              type="text"
+              class="sellers-modal__input"
+              placeholder="Surname"
+            />
+          </div>
+        </label>
 
-            <label class="sellers-modal__label">Email
-                <input id="email" name="email" type="email" class="sellers-modal__input" placeholder="Email" />
-            </label>
-            <label class="sellers-modal__label">Phone number
-                <input id="phone" name="phone" type="tel" class="sellers-modal__input"
-                    placeholder="Phone number" /></label>
-            <label class="sellers-modal__label">Card number <input id="card" name="card" type="number"
-                    class="sellers-modal__input" placeholder="Enter card" /></label>
-            <label class="sellers-modal__label">Comment
-                <textarea name="text" id="text" class="sellers-modal__textarea" placeholder="Enter text"></textarea>
-            </label>
+        <label class="sellers-modal__label"
+          >Email
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="sellers-modal__input"
+            placeholder="Email"
+          />
+        </label>
+        <label class="sellers-modal__label"
+          >Phone number
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            class="sellers-modal__input"
+            placeholder="Phone number"
+        /></label>
+        <label class="sellers-modal__label"
+          >Card number
+          <input
+            id="card"
+            name="card"
+            type="number"
+            class="sellers-modal__input"
+            placeholder="Enter card"
+        /></label>
+        <label class="sellers-modal__label"
+          >Comment
+          <textarea
+            name="text"
+            id="text"
+            class="sellers-modal__textarea"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
         <button type="submit" class="sellers__btn--submit">Send</button>
       </form>
     </div>

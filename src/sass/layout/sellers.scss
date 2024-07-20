@@ -110,8 +110,8 @@
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .no-scroll {
@@ -119,165 +119,165 @@
 }
 
 .sellers-modal__btn--close {
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    top: 7px;
-    right: 7px;
-    width: 40px;
-    height: 40px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 7px;
+  right: 7px;
+  width: 40px;
+  height: 40px;
 
-    &:hover,
-    &:focus {
-        cursor: pointer;
-    }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 
-    @media screen and (min-width: 768px) {
-        top: 12px;
-        right: 12px;
-    }
+  @media screen and (min-width: 768px) {
+    top: 12px;
+    right: 12px;
+  }
 }
 
 .sellers-modal__title {
-    text-align: center;
-    margin-bottom: 32px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .sellers-modal__list {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
 }
 
 .sellers-modal__item {
-    padding: 32px 32px 28px 32px;
-    border: 1px solid rgba(17, 17, 17, 0.10);
-    border-radius: 15px;
+  padding: 32px 32px 28px 32px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 
-    @media screen and (min-width: 768px) {
-        padding: 24px 20px 18px 20px;
-    }
+  @media screen and (min-width: 768px) {
+    padding: 24px 20px 18px 20px;
+  }
 }
 
 .sellers-modal__img {
-    @media screen and (min-width: 768px) {
-        width: 120px;
-        height: 107px;
-        padding-bottom: 14px;
-        align-items: center;
-    }
+  @media screen and (min-width: 768px) {
+    width: 120px;
+    height: 107px;
+    padding-bottom: 14px;
+    align-items: center;
+  }
 }
 
 .sellers-modal__btn {
-    padding: 8px 27px;
-    color: #111;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-    border-radius: 100px;
-    border: 1px solid rgba(17, 17, 17, 0.10);
-    background: #FAFAFA;
-    display: block;
-    margin: 0 auto;
+  padding: 8px 27px;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
+  display: block;
+  margin: 0 auto;
 }
 
 .sellers-modal__label {
-    font-size: 12px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    color: #000;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 14px;
-    letter-spacing: -0.24px;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.24px;
 }
 
 .sellers-modal__label:not(:first-child) {
-    margin-top: 18px;
+  margin-top: 18px;
 }
 
 .sellers-modal__label:first-child {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .sellers-modal__div-name {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        gap: 21px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+  }
 }
 
 .sellers-modal__input {
-    width: 263px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    display: block;
-    outline: none;
-    margin-top: 8px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 14px 18px;
+  width: 263px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  display: block;
+  outline: none;
+  margin-top: 8px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 14px 18px;
 
-    &:hover,
-    &:focus {
-        border-color: orange;
-        cursor: pointer;
-    }
+  &:hover,
+  &:focus {
+    border-color: orange;
+    cursor: pointer;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 513px;
-        padding: 22px 24px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 513px;
+    padding: 22px 24px;
+  }
 }
 
 .sellers-modal__textarea {
-    border-radius: 4px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    width: 263px;
-    height: 120px;
-    resize: none;
-    color: rgba(117, 117, 117, 0.5);
-    line-height: normal;
-    letter-spacing: 0.12px;
-    margin-top: 4px;
-    padding: 14px 18px 60px 18px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 8px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
-    box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 263px;
+  height: 120px;
+  resize: none;
+  color: rgba(117, 117, 117, 0.5);
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-top: 4px;
+  padding: 14px 18px 60px 18px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
 
-    @media screen and (min-width: 768px) {
-        width: 513px;
-        padding: 22px 24px 40px 24px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 513px;
+    padding: 22px 24px 40px 24px;
+  }
 
-    &:hover,
-    &:focus {
-        border-color: orange;
-    }
+  &:hover,
+  &:focus {
+    border-color: orange;
+  }
 }
 
 .sellers__btn--submit {
-    margin-top: 18px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    padding: 12px 28px;
-    gap: 14px;
-    border-radius: 100px;
-    background: #FD9222;
-    border: none;
+  margin-top: 18px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 28px;
+  gap: 14px;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
 }
 .sellers-modal.is-hidden {
   transform: translate(-50%, -50%) scale(0);
@@ -297,4 +297,5 @@
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  z-index: 9999;
 }

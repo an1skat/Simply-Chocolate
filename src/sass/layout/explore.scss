@@ -3,7 +3,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 63px;
+  padding: 72px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -45,19 +45,15 @@
   }
 }
 .explore__title {
-  font-family: Montserrat;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: -0.6px;
   text-transform: uppercase;
   color: $white;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 24px;
-  padding-top: 62px;
   @media screen and (min-width: 768px) {
     line-height: 28px;
     letter-spacing: -0.72px;
@@ -69,21 +65,17 @@
 }
 .explore__text {
   color: $white;
-  text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
   letter-spacing: -0.28px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  width: 467px;
+  margin: 0 auto;
+  margin-top: 24px;
 }
 .explore__btn {
   color: $white;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
   border: none;
@@ -93,6 +85,7 @@
   border-radius: 100px;
   padding: 12px 28px;
   align-items: flex-start;
+  margin-top: 24px; 
   @media screen and (min-width: 768px) {
     font-size: 18px;
     padding: 14px 40px;
