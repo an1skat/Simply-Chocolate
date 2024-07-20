@@ -210,7 +210,7 @@
 .sellers-modal__div-name {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     gap: 21px;
   }
 }
@@ -236,6 +236,9 @@
     width: 513px;
     padding: 22px 24px;
   }
+}
+.sellers-modal__input--small {
+  width: 132px;
 }
 
 .sellers-modal__textarea {
@@ -297,5 +300,5 @@
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  z-index: 9999;
+  z-index: 9999   ;
 }
